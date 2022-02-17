@@ -1,0 +1,155 @@
+/* body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+} */
+
+ol, ul {
+  padding-left: 30px;
+}
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  position: relative;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.input{
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+/* .game-board{
+  border: springgreen 1px solid;
+} */
+.game-info {
+  margin-left: 20px;
+}
+
+.game-size{
+  /* border:springgreen 1px solid; */
+  padding-right: 10px;
+}
+
+.X{
+  font-size: 30px;
+  /* font-weight: bold; */
+  padding: 5px;
+}
+
+.board-row{
+  display: flex;
+}
+
+.circle{
+  border: 1px solid #000;
+  height:95%;
+  width: 95%;
+  border-radius: 50%;
+}
+
+.black{
+  border-radius: 50%;
+    border: 1px solid black;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  background-color: #000;
+}
+
+.white{
+  /* background-color: #fff; */
+  border-radius: 50%;
+    border: 1px solid black;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background-color: white;
+}
+
+.cell {
+  position: relative;
+  background: #fff;
+  /* border: 1px solid #999; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.cell-row{
+  position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    border: 1px solid #a7a3a3;
+}
+
+.cell-cell{
+  position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    border: 1px solid #a7a3a3;
+}
